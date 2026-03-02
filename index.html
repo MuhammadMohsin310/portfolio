@@ -1496,7 +1496,9 @@
         .journey-video-container {
             position: relative;
             width: 100%;
-            padding-top: 56.25%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            /* padding-top: 56.25%; */
             background: var(--bg-card-hover);
         }
 
@@ -2933,7 +2935,7 @@
     </section>
 
     <!-- MY JOURNEY SECTION -->
-   <section class="section journey-section" id="journey">
+<section class="section journey-section" id="journey">
     <div class="section-header reveal">
         <span class="section-label">My Journey</span>
         <h2 class="section-title">From Dreams to <span class="highlight">Reality</span></h2>
@@ -2942,16 +2944,18 @@
 
     <div class="journey-grid">
         
-        <!-- ROW 1: YOUTUBE VIDEO - FULL WIDTH -->
+        <!-- ROW 1: LOCAL VIDEO - FULL WIDTH -->
         <div class="journey-card featured reveal">
             <div class="journey-video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/ysU2FcbTXn0" 
-                    title="Muhammad Mohsin - BanoQabil Success Story" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+                <video 
+                    controls 
+                    preload="metadata"
+                    playsinline
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                    <source src="assets/ss_video/AQNuu-Z-xv6b1oO4rYrYCcinXn0w469Sxx19Ceq4mxTeODCZSKeEmJLQQlHFRMBx7z8hXkpfmvv9fuS6f1UFSnoIUPFg7QK49hvPEmOh4Rtgzw.mp4" type="video/mp4">
+                    <source src="assets/ss_video/AQNuu-Z-xv6b1oO4rYrYCcinXn0w469Sxx19Ceq4mxTeODCZSKeEmJLQQlHFRMBx7z8hXkpfmvv9fuS6f1UFSnoIUPFg7QK49hvPEmOh4Rtgzw.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="journey-card-content">
                 <div class="journey-card-badge">
@@ -2962,9 +2966,6 @@
                 <p>
                     Watch my journey from a curious beginner to a professional Flutter developer. Featured by BanoQabil and Alkhidmat Foundation.
                 </p>
-                <a href="https://youtu.be/ysU2FcbTXn0" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-youtube"></i> Watch on YouTube
-                </a>
             </div>
         </div>
 
