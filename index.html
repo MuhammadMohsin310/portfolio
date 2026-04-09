@@ -1,13 +1,13 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Mohsin</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./assets/creative-m-logo-design_786241-220-removebg-preview.png">
 
@@ -63,7 +63,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -91,16 +91,54 @@
             animation: floatCode 20s linear infinite;
         }
 
-        .code-float:nth-child(1) { left: 5%; top: 20%; animation-delay: 0s; }
-        .code-float:nth-child(2) { left: 15%; top: 60%; animation-delay: -5s; }
-        .code-float:nth-child(3) { left: 85%; top: 30%; animation-delay: -10s; }
-        .code-float:nth-child(4) { left: 90%; top: 70%; animation-delay: -15s; }
-        .code-float:nth-child(5) { left: 8%; top: 85%; animation-delay: -8s; }
-        .code-float:nth-child(6) { left: 75%; top: 15%; animation-delay: -12s; }
+        .code-float:nth-child(1) {
+            left: 5%;
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .code-float:nth-child(2) {
+            left: 15%;
+            top: 60%;
+            animation-delay: -5s;
+        }
+
+        .code-float:nth-child(3) {
+            left: 85%;
+            top: 30%;
+            animation-delay: -10s;
+        }
+
+        .code-float:nth-child(4) {
+            left: 90%;
+            top: 70%;
+            animation-delay: -15s;
+        }
+
+        .code-float:nth-child(5) {
+            left: 8%;
+            top: 85%;
+            animation-delay: -8s;
+        }
+
+        .code-float:nth-child(6) {
+            left: 75%;
+            top: 15%;
+            animation-delay: -12s;
+        }
 
         @keyframes floatCode {
-            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.08; }
-            50% { transform: translateY(-30px) rotate(5deg); opacity: 0.12; }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.08;
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(5deg);
+                opacity: 0.12;
+            }
         }
 
         /* Navigation */
@@ -199,8 +237,15 @@
         }
 
         @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
         }
 
         .hero-title {
@@ -277,8 +322,15 @@
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .emulator-hint {
@@ -363,31 +415,65 @@
         }
 
         /* ===== EMULATOR ATTENTION EFFECTS ===== */
-        
+
         /* Shake Animation */
         @keyframes shake {
-            0%, 100% { transform: translateX(0) rotate(0deg); }
-            10% { transform: translateX(-5px) rotate(-1deg); }
-            20% { transform: translateX(5px) rotate(1deg); }
-            30% { transform: translateX(-5px) rotate(-1deg); }
-            40% { transform: translateX(5px) rotate(1deg); }
-            50% { transform: translateX(-3px) rotate(-0.5deg); }
-            60% { transform: translateX(3px) rotate(0.5deg); }
-            70% { transform: translateX(-2px) rotate(-0.5deg); }
-            80% { transform: translateX(2px) rotate(0.5deg); }
-            90% { transform: translateX(-1px) rotate(0deg); }
+
+            0%,
+            100% {
+                transform: translateX(0) rotate(0deg);
+            }
+
+            10% {
+                transform: translateX(-5px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translateX(5px) rotate(1deg);
+            }
+
+            30% {
+                transform: translateX(-5px) rotate(-1deg);
+            }
+
+            40% {
+                transform: translateX(5px) rotate(1deg);
+            }
+
+            50% {
+                transform: translateX(-3px) rotate(-0.5deg);
+            }
+
+            60% {
+                transform: translateX(3px) rotate(0.5deg);
+            }
+
+            70% {
+                transform: translateX(-2px) rotate(-0.5deg);
+            }
+
+            80% {
+                transform: translateX(2px) rotate(0.5deg);
+            }
+
+            90% {
+                transform: translateX(-1px) rotate(0deg);
+            }
         }
 
         /* Glow Pulse Animation */
         @keyframes glowPulse {
-            0%, 100% { 
-                box-shadow: 
+
+            0%,
+            100% {
+                box-shadow:
                     inset 0 0 0 2px #2a2a3e,
                     0 0 30px var(--accent-glow),
                     0 0 60px transparent;
             }
-            50% { 
-                box-shadow: 
+
+            50% {
+                box-shadow:
                     inset 0 0 0 2px var(--accent),
                     0 0 50px var(--accent-glow),
                     0 0 100px var(--accent-glow);
@@ -450,6 +536,7 @@
                 opacity: 0;
                 transform: translateY(-50%) translateX(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(-50%) translateX(0);
@@ -457,13 +544,27 @@
         }
 
         @keyframes dialogPulse {
-            0%, 100% { transform: translateY(-50%) scale(1); }
-            50% { transform: translateY(-50%) scale(1.05); }
+
+            0%,
+            100% {
+                transform: translateY(-50%) scale(1);
+            }
+
+            50% {
+                transform: translateY(-50%) scale(1.05);
+            }
         }
 
         @keyframes pointRight {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(5px); }
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
         }
 
         /* Floating Hand Pointer */
@@ -478,13 +579,27 @@
         }
 
         @keyframes handAppear {
-            from { opacity: 0; transform: scale(0); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         @keyframes handPoint {
-            0%, 100% { transform: translateX(0) rotate(-20deg); }
-            50% { transform: translateX(15px) rotate(-10deg); }
+
+            0%,
+            100% {
+                transform: translateX(0) rotate(-20deg);
+            }
+
+            50% {
+                transform: translateX(15px) rotate(-10deg);
+            }
         }
 
         /* Notification Badge */
@@ -509,14 +624,31 @@
         }
 
         @keyframes notificationPop {
-            from { opacity: 0; transform: scale(0); }
-            50% { transform: scale(1.3); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1.3);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         @keyframes notificationBounce {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
         }
 
         /* Ring Animation Around Phone */
@@ -542,6 +674,7 @@
                 opacity: 0.8;
                 transform: scale(0.95);
             }
+
             100% {
                 opacity: 0;
                 transform: scale(1.15);
@@ -584,8 +717,17 @@
         }
 
         @keyframes sparkle {
-            0%, 100% { opacity: 0; transform: scale(0); }
-            50% { opacity: 1; transform: scale(1); }
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         /* Hide Effects After Interaction */
@@ -647,9 +789,17 @@
             border-radius: 50%;
         }
 
-        .control-close { background: #ff5f57; }
-        .control-minimize { background: #ffbd2e; }
-        .control-maximize { background: #28ca41; }
+        .control-close {
+            background: #ff5f57;
+        }
+
+        .control-minimize {
+            background: #ffbd2e;
+        }
+
+        .control-maximize {
+            background: #28ca41;
+        }
 
         .phone-device {
             width: 300px;
@@ -658,7 +808,7 @@
             border-radius: 40px;
             padding: 10px;
             position: relative;
-            box-shadow: 
+            box-shadow:
                 inset 0 0 0 2px #2a2a3e,
                 0 0 50px var(--accent-glow);
             transition: box-shadow 0.3s ease;
@@ -794,8 +944,15 @@
         }
 
         @keyframes ripple {
-            0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(1.5); opacity: 0; }
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
         }
 
         .profile-name {
@@ -1389,7 +1546,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .toast {
@@ -1659,7 +1818,9 @@
         }
 
         @keyframes rotate-border {
-            100% { transform: rotate(360deg); }
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .about-image-box::after {
@@ -1820,80 +1981,104 @@
         }
 
         .project-card-web {
-            background: var(--bg-card);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 28px;
             overflow: hidden;
             transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .project-card-web::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,212,255,0.06) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
         }
 
         .project-card-web:hover {
-            border-color: var(--accent);
-            transform: translateY(-10px);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.45);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.07);
+            box-shadow: 0 0 32px rgba(0, 212, 255, 0.15), 0 24px 60px rgba(0, 0, 0, 0.45);
         }
 
         .project-mockup-web {
-            height: 220px;
-            background: var(--bg-card-hover);
+            height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            overflow: hidden;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
 
-        .project-phone-web {
+        .project-logo-web {
             width: 120px;
-            height: 240px;
-            background: #1a1a25;
-            border-radius: 24px;
-            padding: 6px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-            transform: perspective(500px) rotateY(-15deg);
-            transition: transform 0.5s ease;
+            height: 120px;
+            border-radius: 26px;
+            object-fit: contain;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
-        .project-card-web:hover .project-phone-web {
-            transform: perspective(500px) rotateY(0deg) scale(1.05);
+        .project-card-web:hover .project-logo-web {
+            transform: scale(1.08) translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 22px rgba(0,212,255,0.25);
         }
 
-        .project-phone-screen-web {
-            width: 100%;
-            height: 100%;
+        .project-logo-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26px;
             background: var(--accent-dim);
-            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 45px;
+            font-size: 52px;
             color: var(--accent);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card-web:hover .project-logo-icon {
+            transform: scale(1.08) translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 22px rgba(0,212,255,0.25);
         }
 
         .project-content-web {
-            padding: 30px;
+            padding: 24px 28px 28px;
+            position: relative;
+            z-index: 1;
         }
 
         .project-tags-web {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
         .project-tag-web {
-            background: var(--accent-dim);
+            background: rgba(0, 212, 255, 0.08);
             color: var(--accent);
-            padding: 5px 14px;
+            padding: 4px 12px;
             border-radius: 20px;
-            font-size: 12px;
-            font-weight: 500;
+            font-size: 11px;
+            font-weight: 600;
+            border: 1px solid rgba(0,212,255,0.15);
         }
 
         .project-content-web h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
+            font-size: 20px;
+            margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-weight: 700;
         }
 
         .project-card-web:hover .project-content-web h3 {
@@ -1901,9 +2086,36 @@
         }
 
         .project-content-web p {
-            font-size: 14px;
-            color: var(--gray);
+            font-size: 13.5px;
+            color: var(--light-gray);
             line-height: 1.7;
+        }
+
+        .project-playstore-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 18px;
+            padding: 10px 18px;
+            background: var(--accent-dim);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .project-playstore-btn:hover {
+            background: var(--accent);
+            color: var(--bg-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--accent-glow);
+        }
+
+        .project-playstore-btn i {
+            font-size: 16px;
         }
 
         /* Blog Section */
@@ -2446,6 +2658,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Grid Background -->
     <div class="grid-bg"></div>
@@ -2463,8 +2676,8 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-logo">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHWGC7CVLbS0Q/profile-displayphoto-shrink_200_200/B4DZvWj4eTJgAY-/0/1768831291494?e=1774483200&v=beta&t=YOUR_TOKEN" 
-            alt="Mohsin" onerror="this.style.display='none'">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHWGC7CVLbS0Q/profile-displayphoto-shrink_200_200/B4DZvWj4eTJgAY-/0/1768831291494?e=1774483200&v=beta&t=YOUR_TOKEN"
+                alt="Mohsin" onerror="this.style.display='none'">
             Mohsin
         </div>
         <ul class="nav-links">
@@ -2488,17 +2701,18 @@
                 <span class="dot"></span>
                 Available for Work
             </div>
-            
+
             <h1 class="hero-title">
                 I Build <span class="highlight">Mobile Apps</span> That Users Love
             </h1>
-            
+
             <p class="hero-subtitle">Flutter Developer from Pakistan 🇵🇰</p>
-            
+
             <p class="hero-description">
-                With 1.5+ years of experience crafting high-performance mobile applications for Android & iOS. I turn complex ideas into seamless, beautiful apps.
+                With 1.5+ years of experience crafting high-performance mobile applications for Android & iOS. I turn
+                complex ideas into seamless, beautiful apps.
             </p>
-            
+
             <div class="hero-buttons">
                 <a href="mailto:mohsin.dev10@gmail.com" class="btn btn-primary">
                     <i class="fas fa-paper-plane"></i> Hire Me
@@ -2507,7 +2721,7 @@
                     <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
-            
+
             <div class="emulator-hint">
                 <div class="hint-icon">
                     <i class="fas fa-hand-pointer"></i>
@@ -2533,10 +2747,12 @@
                     <a href="https://github.com/MuhammadMohsin310" target="_blank" class="tech-icon" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://pub.dev/packages/flutter_speed_dial_navbar" target="_blank" class="tech-icon" title="pub.dev">
+                    <a href="https://pub.dev/packages/flutter_speed_dial_navbar" target="_blank" class="tech-icon"
+                        title="pub.dev">
                         <i class="fas fa-box-open"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/muhammad-mohsin-b89150248/" target="_blank" class="tech-icon" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/muhammad-mohsin-b89150248/" target="_blank" class="tech-icon"
+                        title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -2545,20 +2761,20 @@
 
         <!-- Phone Emulator with Attention Effects -->
         <div class="phone-emulator attention" id="phoneEmulator">
-            
+
             <!-- Attention Dialog -->
             <div class="emulator-attention-dialog">
                 <i class="fas fa-hand-pointer"></i>
-                Try Me! Tap to Explore 
+                Try Me! Tap to Explore
             </div>
-            
+
             <!-- Floating Hand -->
             <div class="floating-hand"></div>
-            
+
             <!-- Ring Animations -->
             <div class="phone-ring"></div>
             <div class="phone-ring"></div>
-            
+
             <!-- Sparkle Effects -->
             <div class="sparkle"></div>
             <div class="sparkle"></div>
@@ -2566,10 +2782,10 @@
             <div class="sparkle"></div>
 
             <div class="emulator-frame">
-                
+
                 <!-- Notification Badge -->
                 <div class="emulator-notification">!</div>
-                
+
                 <div class="emulator-top-bar">
                     <div class="emulator-title">
                         <i class="fab fa-android"></i>
@@ -2603,9 +2819,9 @@
                             <div class="app-screen active" id="screen-home">
                                 <div class="home-screen">
                                     <div class="profile-section">
-                                       <div class="profile-avatar">
-                                            <img src="assets/Screenshot 2024-11-02 at 12.30.39.png"
-                                                alt="Muhammad Mohsin" onerror="this.parentElement.innerHTML='M'">
+                                        <div class="profile-avatar">
+                                            <img src="assets/me.jpg" alt="Muhammad Mohsin"
+                                                onerror="this.parentElement.innerHTML='M'">
                                         </div>
                                         <div class="profile-name">Muhammad Mohsin</div>
                                         <div class="profile-title">Flutter Developer</div>
@@ -2652,14 +2868,14 @@
                             </div>
 
                             <!-- PROJECTS SCREEN -->
-                           <div class="app-screen" id="screen-projects">
+                            <div class="app-screen" id="screen-projects">
                                 <div class="screen-header">
                                     <h2>My Projects</h2>
                                 </div>
                                 <div class="projects-list">
                                     <div class="project-item" onclick="openProject('smartread')">
                                         <div class="project-icon">
-                                    
+
                                             <img src="./assets/logo.png" alt="" width="40px" height="40px">
                                         </div>
                                         <div class="project-info">
@@ -2669,7 +2885,8 @@
                                         <div class="project-arrow"><i class="fas fa-chevron-right"></i></div>
                                     </div>
                                     <div class="project-item" onclick="openProject('taxi')">
-                                        <div class="project-icon"> <img src="./assets/Profile (1).jpg" alt="" width="40px" height="40px"></div>
+                                        <div class="project-icon"> <img src="./assets/Profile (1).jpg" alt=""
+                                                width="40px" height="40px"></div>
                                         <div class="project-info">
                                             <h4>Taxi Ride App</h4>
                                             <p>Ride-hailing with GPS & payments</p>
@@ -2677,7 +2894,8 @@
                                         <div class="project-arrow"><i class="fas fa-chevron-right"></i></div>
                                     </div>
                                     <div class="project-item" onclick="openProject('jobportal')">
-                                        <div class="project-icon"> <img src="./assets/BQ-Logo.svg" alt="" width="40px" height="40px"></div>
+                                        <div class="project-icon"> <img src="./assets/BQ-Logo.svg" alt="" width="40px"
+                                                height="40px"></div>
                                         <div class="project-info">
                                             <h4>BQ Job Portal</h4>
                                             <p>Job marketplace platform</p>
@@ -2685,7 +2903,8 @@
                                         <div class="project-arrow"><i class="fas fa-chevron-right"></i></div>
                                     </div>
                                     <div class="project-item" onclick="openProject('qrcode')">
-                                        <div class="project-icon"> <img src="./assets/app_logo.jpg" alt="" width="40px" height="40px"></div>
+                                        <div class="project-icon"> <img src="./assets/app_logo.jpg" alt="" width="40px"
+                                                height="40px"></div>
                                         <div class="project-info">
                                             <h4>Arsalan Parts</h4>
                                             <p>Generate & scan QR codes</p>
@@ -2696,7 +2915,7 @@
                             </div>
 
                             <!-- PROJECT DETAILS -->
-                           <div class="app-screen project-detail-screen" id="screen-smartread">
+                            <div class="app-screen project-detail-screen" id="screen-smartread">
                                 <div class="screen-header">
                                     <div class="back-btn" onclick="navigateTo('projects')"><i
                                             class="fas fa-arrow-left"></i></div>
@@ -2731,8 +2950,8 @@
                             <div class="app-screen project-detail-screen" id="screen-taxi">
                                 <div class="screen-header">
                                     <div class="back-btn" onclick="navigateTo('projects')">
-                                        <i
-                                            class="fas fa-arrow-left"></i></div>
+                                        <i class="fas fa-arrow-left"></i>
+                                    </div>
                                     <h2>Project Details</h2>
                                 </div>
                                 <div class="project-detail-header">
@@ -2765,13 +2984,14 @@
                             <div class="app-screen project-detail-screen" id="screen-jobportal">
                                 <div class="screen-header">
                                     <div class="back-btn" onclick="navigateTo('projects')">
-                                      <i
-                                            class="fas fa-arrow-left"></i></div>
+                                        <i class="fas fa-arrow-left"></i>
+                                    </div>
                                     <h2>Project Details</h2>
                                 </div>
                                 <div class="project-detail-header">
                                     <div class="project-detail-icon">
-                                       <img src="./assets/BQ-Logo.svg" alt="" width="80px" height="80px"></div>
+                                        <img src="./assets/BQ-Logo.svg" alt="" width="80px" height="80px">
+                                    </div>
                                     <h3>BQ Job Portal</h3>
                                     <div class="project-tags">
                                         <span class="project-tag">Flutter</span>
@@ -2802,7 +3022,7 @@
                                 </div>
                                 <div class="project-detail-header">
                                     <div class="project-detail-icon">
-                                     <img src="./assets/app_logo.jpg" alt="" width="80px" height="80px">
+                                        <img src="./assets/app_logo.jpg" alt="" width="80px" height="80px">
                                     </div>
                                     <h3>Arsalan parts</h3>
                                     <div class="project-tags">
@@ -2827,15 +3047,19 @@
 
                             <!-- SKILLS SCREEN -->
                             <div class="app-screen" id="screen-skills">
-                                <div class="screen-header"><h2>My Skills</h2></div>
+                                <div class="screen-header">
+                                    <h2>My Skills</h2>
+                                </div>
                                 <div class="skills-grid-phone">
                                     <div class="skill-item"><i class="fa-solid fa-mobile"></i><span>Flutter</span></div>
                                     <div class="skill-item"><i class="fas fa-code"></i><span>Dart</span></div>
                                     <div class="skill-item"><i class="fas fa-fire"></i><span>Firebase</span></div>
                                     <div class="skill-item"><i class="fas fa-plug"></i><span>REST APIs</span></div>
                                     <div class="skill-item"><i class="fas fa-map-marker-alt"></i><span>Maps</span></div>
-                                    <div class="skill-item"><i class="fas fa-credit-card"></i><span>Payments</span></div>
-                                    <div class="skill-item"><i class="fas fa-layer-group"></i><span>Clean Arch</span></div>
+                                    <div class="skill-item"><i class="fas fa-credit-card"></i><span>Payments</span>
+                                    </div>
+                                    <div class="skill-item"><i class="fas fa-layer-group"></i><span>Clean Arch</span>
+                                    </div>
                                     <div class="skill-item"><i class="fas fa-cubes"></i><span>BLoC</span></div>
                                     <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
                                 </div>
@@ -2843,11 +3067,14 @@
 
                             <!-- ABOUT SCREEN -->
                             <div class="app-screen" id="screen-about">
-                                <div class="screen-header"><h2>About Me</h2></div>
+                                <div class="screen-header">
+                                    <h2>About Me</h2>
+                                </div>
                                 <div class="about-content-phone">
                                     <div class="about-section-phone">
                                         <h4><i class="fas fa-user"></i> Who I Am</h4>
-                                        <p>A passionate Flutter developer with 1.5+ years of experience building mobile apps.</p>
+                                        <p>A passionate Flutter developer with 1.5+ years of experience building mobile
+                                            apps.</p>
                                     </div>
                                     <div class="about-section-phone">
                                         <h4><i class="fas fa-star"></i> My Journey</h4>
@@ -2880,22 +3107,36 @@
                                 <div class="contact-methods-phone">
                                     <a href="mailto:mohsin.dev10@gmail.com" class="contact-method-phone">
                                         <i class="fas fa-envelope"></i>
-                                        <div class="contact-method-info"><h4>Email</h4><p>mohsin.dev10@gmail.com</p></div>
+                                        <div class="contact-method-info">
+                                            <h4>Email</h4>
+                                            <p>mohsin.dev10@gmail.com</p>
+                                        </div>
                                     </a>
-                                    <a href="https://www.linkedin.com/in/muhammad-mohsin-b89150248/" target="_blank" class="contact-method-phone">
+                                    <a href="https://www.linkedin.com/in/muhammad-mohsin-b89150248/" target="_blank"
+                                        class="contact-method-phone">
                                         <i class="fab fa-linkedin"></i>
-                                        <div class="contact-method-info"><h4>LinkedIn</h4><p>Let's connect</p></div>
+                                        <div class="contact-method-info">
+                                            <h4>LinkedIn</h4>
+                                            <p>Let's connect</p>
+                                        </div>
                                     </a>
                                     <a href="https://wa.me/923171442824" target="_blank" class="contact-method-phone">
                                         <i class="fab fa-whatsapp"></i>
-                                        <div class="contact-method-info"><h4>WhatsApp</h4><p>+92 317 1442824</p></div>
+                                        <div class="contact-method-info">
+                                            <h4>WhatsApp</h4>
+                                            <p>+92 317 1442824</p>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="social-grid-phone">
-                                    <a href="https://github.com/MuhammadMohsin310" target="_blank" class="social-item-phone"><i class="fab fa-github"></i></a>
-                                    <a href="https://medium.com/@muhammad-mohsin" target="_blank" class="social-item-phone"><i class="fab fa-medium"></i></a>
-                                    <a href="https://pub.dev/packages/flutter_speed_dial_navbar" target="_blank" class="social-item-phone"><i class="fas fa-box-open"></i></a>
-                                    <a href="https://youtu.be/ysU2FcbTXn0" target="_blank" class="social-item-phone"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://github.com/MuhammadMohsin310" target="_blank"
+                                        class="social-item-phone"><i class="fab fa-github"></i></a>
+                                    <a href="https://medium.com/@muhammad-mohsin" target="_blank"
+                                        class="social-item-phone"><i class="fab fa-medium"></i></a>
+                                    <a href="https://pub.dev/packages/flutter_speed_dial_navbar" target="_blank"
+                                        class="social-item-phone"><i class="fas fa-box-open"></i></a>
+                                    <a href="https://youtu.be/ysU2FcbTXn0" target="_blank" class="social-item-phone"><i
+                                            class="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -2920,7 +3161,9 @@
                         </div>
 
                         <div class="home-indicator"></div>
-                        <div class="loading-overlay" id="loading"><div class="loading-spinner"></div></div>
+                        <div class="loading-overlay" id="loading">
+                            <div class="loading-spinner"></div>
+                        </div>
                         <div class="toast" id="toast">Message</div>
                     </div>
 
@@ -2935,97 +3178,97 @@
     </section>
 
     <!-- MY JOURNEY SECTION -->
-<section class="section journey-section" id="journey">
-    <div class="section-header reveal">
-        <span class="section-label">My Journey</span>
-        <h2 class="section-title">From Dreams to <span class="highlight">Reality</span></h2>
-        <p class="section-subtitle">The story behind the code — milestones that shaped my career</p>
-    </div>
-
-    <div class="journey-grid">
-        
-        <!-- ROW 1: LOCAL VIDEO - FULL WIDTH -->
-        <div class="journey-card featured reveal">
-            <div class="journey-video-container">
-                <video 
-                    controls 
-                    preload="metadata"
-                    playsinline
-                    style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
-                    <source src="assets/ss_video/AQNuu-Z-xv6b1oO4rYrYCcinXn0w469Sxx19Ceq4mxTeODCZSKeEmJLQQlHFRMBx7z8hXkpfmvv9fuS6f1UFSnoIUPFg7QK49hvPEmOh4Rtgzw.mp4" type="video/mp4">
-                    <source src="assets/ss_video/AQNuu-Z-xv6b1oO4rYrYCcinXn0w469Sxx19Ceq4mxTeODCZSKeEmJLQQlHFRMBx7z8hXkpfmvv9fuS6f1UFSnoIUPFg7QK49hvPEmOh4Rtgzw.mp4" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="journey-card-content">
-                <div class="journey-card-badge">
-                    <i class="fas fa-star"></i>
-                    Featured Story
-                </div>
-                <h3>🎬 BanoQabil Success Story</h3>
-                <p>
-                    Watch my journey from a curious beginner to a professional Flutter developer. Featured by BanoQabil and Alkhidmat Foundation.
-                </p>
-            </div>
+    <section class="section journey-section" id="journey">
+        <div class="section-header reveal">
+            <span class="section-label">My Journey</span>
+            <h2 class="section-title">From Dreams to <span class="highlight">Reality</span></h2>
+            <p class="section-subtitle">The story behind the code — milestones that shaped my career</p>
         </div>
 
-        <!-- ROW 2 LEFT: PC HOTEL SPEECH -->
-        <div class="journey-card reveal">
-            <div class="speech-image">
-                <img src="assets/1000080822.jpg" 
-                     alt="Muhammad Mohsin speaking at PC Hotel" 
-                     class="speech-photo"
-                     onerror="this.style.opacity='0'">
-                <div class="speech-overlay-light"></div>
-                <div class="speech-badge-corner">
-                    <i class="fas fa-microphone-alt"></i>
+        <div class="journey-grid">
+
+            <!-- ROW 1: LOCAL VIDEO - FULL WIDTH -->
+            <div class="journey-card featured reveal">
+                <div class="journey-video-container">
+                    <video controls preload="metadata" playsinline
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                        <source
+                            src="assets/ss_video/AQNuu-Z-xv6b1oO4rYrYCcinXn0w469Sxx19Ceq4mxTeODCZSKeEmJLQQlHFRMBx7z8hXkpfmvv9fuS6f1UFSnoIUPFg7QK49hvPEmOh4Rtgzw.mp4"
+                            type="video/mp4">
+                        <source
+                            src="assets/ss_video/AQNuu-Z-xv6b1oO4rYrYCcinXn0w469Sxx19Ceq4mxTeODCZSKeEmJLQQlHFRMBx7z8hXkpfmvv9fuS6f1UFSnoIUPFg7QK49hvPEmOh4Rtgzw.mp4"
+                            type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="journey-card-content">
+                    <div class="journey-card-badge">
+                        <i class="fas fa-star"></i>
+                        Featured Story
+                    </div>
+                    <h3>🎬 BanoQabil Success Story</h3>
+                    <p>
+                        Watch my journey from a curious beginner to a professional Flutter developer. Featured by
+                        BanoQabil and Alkhidmat Foundation.
+                    </p>
                 </div>
             </div>
-            <div class="journey-card-content">
-                <div class="journey-card-badge">
-                    <i class="fas fa-microphone"></i>
-                    Public Speaking
+
+            <!-- ROW 2 LEFT: PC HOTEL SPEECH -->
+            <div class="journey-card reveal">
+                <div class="speech-image">
+                    <img src="assets/1000080822.jpg" alt="Muhammad Mohsin speaking at PC Hotel" class="speech-photo"
+                        onerror="this.style.opacity='0'">
+                    <div class="speech-overlay-light"></div>
+                    <div class="speech-badge-corner">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
                 </div>
-                <h3>🎤 Sharing My Journey</h3>
-                <p>
-                    Had the honor of sharing my journey at PC Hotel. Speaking about challenges and passion for mobile development.
-                </p>
-                 <a href="https://www.facebook.com/share/v/18DwJdaJ1L/" target="_blank" class="btn btn-secondary">
-                    <i class="fas fa-external-link-alt"></i> View Speech
-                </a>
-            </div>
-        </div>
-         <div class="journey-card reveal">
-            <div class="speech-image">
-                <img src="assets/download.png" 
-                     alt="Muhammad Mohsin speaking at PC Hotel" 
-                     class="speech-photo"
-                     onerror="this.style.opacity='0'">
-                <div class="speech-overlay-light"></div>
-                <div class="speech-badge-corner">
-                    <i class="fas fa-box-open"></i>
+                <div class="journey-card-content">
+                    <div class="journey-card-badge">
+                        <i class="fas fa-microphone"></i>
+                        Public Speaking
+                    </div>
+                    <h3>🎤 Sharing My Journey</h3>
+                    <p>
+                        Had the honor of sharing my journey at PC Hotel. Speaking about challenges and passion for
+                        mobile development.
+                    </p>
+                    <a href="https://www.facebook.com/share/v/18DwJdaJ1L/" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> View Speech
+                    </a>
                 </div>
             </div>
-            <div class="journey-card-content">
-                <div class="journey-card-badge">
-                    📦 Flutter Packages
+            <div class="journey-card reveal">
+                <div class="speech-image">
+                    <img src="assets/download.png" alt="Muhammad Mohsin speaking at PC Hotel" class="speech-photo"
+                        onerror="this.style.opacity='0'">
+                    <div class="speech-overlay-light"></div>
+                    <div class="speech-badge-corner">
+                        <i class="fas fa-box-open"></i>
+                    </div>
                 </div>
-                <h3>Packages on pub.dev</h3>
-                <p>
-                    Contributing to Flutter community by publishing reusable packages on pub.dev.
-                </p>
-                 <a href="https://pub.dev/packages/flutter_speed_dial_navbar" target="_blank" class="btn btn-secondary">
-                    <i class="fas fa-external-link-alt"></i> View Packages
-                </a>
+                <div class="journey-card-content">
+                    <div class="journey-card-badge">
+                        📦 Flutter Packages
+                    </div>
+                    <h3>Packages on pub.dev</h3>
+                    <p>
+                        Contributing to Flutter community by publishing reusable packages on pub.dev.
+                    </p>
+                    <a href="https://pub.dev/packages/flutter_speed_dial_navbar" target="_blank"
+                        class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> View Packages
+                    </a>
+                </div>
             </div>
-        </div>
 
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- ABOUT SECTION -->
-     <section class="section about-section-web" id="about">
+    <section class="section about-section-web" id="about">
         <div class="section-header reveal">
             <span class="section-label">About Me</span>
             <h2 class="section-title">Passionate About <span class="highlight">Mobile Development</span></h2>
@@ -3035,9 +3278,7 @@
         <div class="about-grid">
             <div class="about-image reveal">
                 <div class="about-image-box">
-                    <img src="assets/Screenshot 2024-11-02 at 12.30.39.png"
-                   
-                        alt="Muhammad Mohsin" class="about-avatar"
+                    <img src="assets/me.jpg" alt="Muhammad Mohsin" class="about-avatar"
                         onerror="this.outerHTML='<i class=\'fas fa-user-astronaut about-avatar\' style=\'font-size:150px;color:var(--accent);\'></i>'">
                 </div>
                 <div class="experience-floating">
@@ -3090,7 +3331,7 @@
 
         <div class="skills-grid-web reveal">
             <div class="skill-card-web">
-                    <div class="skill-icon-web"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <div class="skill-icon-web"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <path fill="#74C0FC"
                             d="M525.5 300.3L387.7 438.1L525.5 576L368 576C331.9 539.9 285.9 493.9 230.1 438.1L368 300.3L525.5 300.3zM368 64L112 320L190.8 398.8L525.5 64L368 64z" />
                     </svg></div>
@@ -3128,7 +3369,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-   <section class="section projects-section-web" id="projects">
+    <section class="section projects-section-web" id="projects">
         <div class="section-header reveal">
             <span class="section-label">My Work</span>
             <h2 class="section-title">Apps That Make <span class="highlight">Real Impact</span></h2>
@@ -3136,14 +3377,95 @@
         </div>
 
         <div class="projects-grid-web">
+
+            <!-- TaxiRides -->
             <div class="project-card-web reveal">
                 <div class="project-mockup-web">
-                    <div class="project-phone-web">
-                        <div class="project-phone-screen-web">
-                            <!-- <i class="fas fa-school"></i> -->
-                            <img src="./assets/logo.png" alt="" width="100px" height="100px">
-                        </div>
+                    <img src="./assets/taxi.png" alt="TaxiRides" class="project-logo-web">
+                </div>
+                <div class="project-content-web">
+                    <div class="project-tags-web">
+                        <span class="project-tag-web">Flutter</span>
+                        <span class="project-tag-web">Google Maps</span>
+                        <span class="project-tag-web">Payments</span>
                     </div>
+                    <h3>TaxiRides</h3>
+                    <p>Full-featured ride-hailing app with real-time GPS tracking, driver matching, and seamless fare
+                        calculation for a smooth commute experience.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.taxi.taxirides&pcampaignid=web_share"
+                        target="_blank" class="project-playstore-btn">
+                        <i class="fab fa-google-play"></i> Get it on Google Play
+                    </a>
+                </div>
+            </div>
+
+            <!-- PDF Studio -->
+            <div class="project-card-web reveal">
+                <div class="project-mockup-web">
+                    <img src="./assets/pdf.png" alt="PDF Studio" class="project-logo-web">
+                </div>
+                <div class="project-content-web">
+                    <div class="project-tags-web">
+                        <span class="project-tag-web">Flutter</span>
+                        <span class="project-tag-web">File Management</span>
+                        <span class="project-tag-web">Utility</span>
+                    </div>
+                    <h3>PDF Studio</h3>
+                    <p>Powerful PDF converter and editor to create, convert, merge, and manage PDF files effortlessly
+                        from your mobile device.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.nsb.pdfconverter&pcampaignid=web_share"
+                        target="_blank" class="project-playstore-btn">
+                        <i class="fab fa-google-play"></i> Get it on Google Play
+                    </a>
+                </div>
+            </div>
+
+            <!-- NSB Maps -->
+            <div class="project-card-web reveal">
+                <div class="project-mockup-web">
+                    <img src="./assets/NSB Maps Icon.png" alt="NSB Maps" class="project-logo-web">
+                </div>
+                <div class="project-content-web">
+                    <div class="project-tags-web">
+                        <span class="project-tag-web">Flutter</span>
+                        <span class="project-tag-web">GPS</span>
+                        <span class="project-tag-web">Navigation</span>
+                    </div>
+                    <h3>NSB Maps</h3>
+                    <p>Advanced navigation app with offline maps, turn-by-turn directions, and real-time traffic updates
+                        for reliable route guidance anywhere.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.nsbnavigatorpro&pcampaignid=web_share"
+                        target="_blank" class="project-playstore-btn">
+                        <i class="fab fa-google-play"></i> Get it on Google Play
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Filer -->
+            <div class="project-card-web reveal">
+                <div class="project-mockup-web">
+                    <img src="./assets/quickFiler.png" alt="QuickFiler" class="project-logo-web">
+                </div>
+                <div class="project-content-web">
+                    <div class="project-tags-web">
+                        <span class="project-tag-web">Flutter</span>
+                        <span class="project-tag-web">FBR</span>
+                        <span class="project-tag-web">Tax & Finance</span>
+                    </div>
+                    <h3>Quick Filer</h3>
+                    <p>Comprehensive FBR tax filing app for NTN registration, business tax returns, and income tax
+                        filing — simplifying Pakistan's tax compliance process.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.gcs.quickfiler&pcampaignid=web_share"
+                        target="_blank" class="project-playstore-btn">
+                        <i class="fab fa-google-play"></i> Get it on Google Play
+                    </a>
+                </div>
+            </div>
+
+            <!-- Existing Projects -->
+            <div class="project-card-web reveal">
+                <div class="project-mockup-web">
+                    <img src="./assets/logo.png" alt="Smart Read App" class="project-logo-web">
                 </div>
                 <div class="project-content-web">
                     <div class="project-tags-web">
@@ -3157,34 +3479,10 @@
                 </div>
             </div>
 
-            <div class="project-card-web reveal">
-                <div class="project-mockup-web">
-                    <div class="project-phone-web">
-                        <div class="project-phone-screen-web">
-                            <img src="./assets/Profile (1).jpg" alt="" width="100px" height="100px">
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content-web">
-                    <div class="project-tags-web">
-                        <span class="project-tag-web">Flutter</span>
-                        <span class="project-tag-web">Google Maps</span>
-                        <span class="project-tag-web">Payments</span>
-                    </div>
-                    <h3>Taxi Ride App</h3>
-                    <p>Full-featured ride-hailing app with real-time GPS tracking, driver matching, and secure payment
-                        integration.</p>
-                </div>
-            </div>
 
             <div class="project-card-web reveal">
                 <div class="project-mockup-web">
-                    <div class="project-phone-web">
-                        <div class="project-phone-screen-web">
-                            <img src="./assets/BQ-Logo.svg" alt="" width="100px" height="100px">
-
-                            </i></div>
-                    </div>
+                    <img src="./assets/BQ-Logo.svg" alt="BQ Job Portal" class="project-logo-web" style="background:#fff;padding:10px;">
                 </div>
                 <div class="project-content-web">
                     <div class="project-tags-web">
@@ -3199,11 +3497,7 @@
 
             <div class="project-card-web reveal">
                 <div class="project-mockup-web">
-                    <div class="project-phone-web">
-                        <div class="project-phone-screen-web">
-                           <img src="./assets/app_logo.jpg" alt="" width="100px" height="100px">
-                        </div>
-                    </div>
+                    <img src="./assets/app_logo.jpg" alt="Arsalan Parts" class="project-logo-web">
                 </div>
                 <div class="project-content-web">
                     <div class="project-tags-web">
@@ -3230,9 +3524,8 @@
             <!-- Blog Card 1 -->
             <article class="blog-card reveal">
                 <div class="blog-image">
-                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*a6rGIwZAUc7_yhDh0pqZrw.png" 
-                         alt="Why Your Flutter App Crashes" 
-                         class="blog-thumbnail">
+                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*a6rGIwZAUc7_yhDh0pqZrw.png"
+                        alt="Why Your Flutter App Crashes" class="blog-thumbnail">
                     <span class="blog-category">Debugging</span>
                     <div class="medium-float"><i class="fab fa-medium"></i></div>
                     <div class="blog-overlay"></div>
@@ -3244,7 +3537,8 @@
                     </div>
                     <h3>Why Your Flutter App Crashes</h3>
                     <p>Discover the common reasons behind Flutter app crashes and learn how to debug and fix them.</p>
-                    <a href="https://medium.com/@muhammad-mohsin/why-your-flutter-app-crashes-eddcdba4b447" target="_blank" class="blog-read-more">
+                    <a href="https://medium.com/@muhammad-mohsin/why-your-flutter-app-crashes-eddcdba4b447"
+                        target="_blank" class="blog-read-more">
                         Read Article <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -3253,9 +3547,8 @@
             <!-- Blog Card 2 -->
             <article class="blog-card reveal">
                 <div class="blog-image">
-                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*k0JuBuq_P_PosqQs9aOwrg.png" 
-                         alt="Retrofit in Flutter with Dio" 
-                         class="blog-thumbnail">
+                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*k0JuBuq_P_PosqQs9aOwrg.png"
+                        alt="Retrofit in Flutter with Dio" class="blog-thumbnail">
                     <span class="blog-category">Networking</span>
                     <div class="medium-float"><i class="fab fa-medium"></i></div>
                     <div class="blog-overlay"></div>
@@ -3267,7 +3560,8 @@
                     </div>
                     <h3>Retrofit in Flutter with Dio & JSON Serializable</h3>
                     <p>Learn how to implement Retrofit pattern in Flutter using Dio for clean API calls.</p>
-                    <a href="https://medium.com/@muhammad-mohsin/retrofit-in-flutter-with-dio-json-serializable-5135b1380715" target="_blank" class="blog-read-more">
+                    <a href="https://medium.com/@muhammad-mohsin/retrofit-in-flutter-with-dio-json-serializable-5135b1380715"
+                        target="_blank" class="blog-read-more">
                         Read Article <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -3276,9 +3570,8 @@
             <!-- Blog Card 3 -->
             <article class="blog-card reveal">
                 <div class="blog-image">
-                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*9AFY2c19_msZ6sv1H7IV1Q.png" 
-                         alt="Customizing Widgets in Flutter" 
-                         class="blog-thumbnail">
+                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*9AFY2c19_msZ6sv1H7IV1Q.png"
+                        alt="Customizing Widgets in Flutter" class="blog-thumbnail">
                     <span class="blog-category">UI/UX</span>
                     <div class="medium-float"><i class="fab fa-medium"></i></div>
                     <div class="blog-overlay"></div>
@@ -3290,7 +3583,8 @@
                     </div>
                     <h3>Customizing Widgets in Flutter: Create Your Own Unique UI</h3>
                     <p>Master the art of creating custom widgets to build unique user interfaces.</p>
-                    <a href="https://medium.com/@muhammad-mohsin/customizing-widgets-in-flutter-create-your-own-unique-ui-9efa658b5f2a" target="_blank" class="blog-read-more">
+                    <a href="https://medium.com/@muhammad-mohsin/customizing-widgets-in-flutter-create-your-own-unique-ui-9efa658b5f2a"
+                        target="_blank" class="blog-read-more">
                         Read Article <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -3317,19 +3611,22 @@
                 <div class="opensource-icon"><i class="fas fa-box-open"></i></div>
                 <h3>Flutter Packages</h3>
                 <p>Published reusable packages on pub.dev that help developers build better apps.</p>
-                <a href="https://pub.dev/packages/flutter_speed_dial_navbar" class="opensource-link" target="_blank">View on pub.dev <i class="fas fa-arrow-right"></i></a>
+                <a href="https://pub.dev/packages/flutter_speed_dial_navbar" class="opensource-link"
+                    target="_blank">View on pub.dev <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="opensource-card">
                 <div class="opensource-icon"><i class="fab fa-medium"></i></div>
                 <h3>Technical Articles</h3>
                 <p>Writing articles on Flutter best practices, architecture, and solutions.</p>
-                <a href="https://medium.com/@muhammad-mohsin" class="opensource-link" target="_blank">Read on Medium <i class="fas fa-arrow-right"></i></a>
+                <a href="https://medium.com/@muhammad-mohsin" class="opensource-link" target="_blank">Read on Medium <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
             <div class="opensource-card">
                 <div class="opensource-icon"><i class="fab fa-github"></i></div>
                 <h3>GitHub Contributions</h3>
                 <p>Actively contributing to open-source projects and helping the community.</p>
-                <a href="https://github.com/MuhammadMohsin310" class="opensource-link" target="_blank">View GitHub <i class="fas fa-arrow-right"></i></a>
+                <a href="https://github.com/MuhammadMohsin310" class="opensource-link" target="_blank">View GitHub <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -3340,7 +3637,8 @@
             <div class="reveal">
                 <span class="section-label">Get In Touch</span>
                 <h2 class="contact-title-web">Let's Build Something <span class="highlight">Amazing</span></h2>
-                <p class="contact-description-web">Got a project in mind? Looking for a Flutter developer? Let's talk!</p>
+                <p class="contact-description-web">Got a project in mind? Looking for a Flutter developer? Let's talk!
+                </p>
             </div>
 
             <div class="contact-grid reveal">
@@ -3367,11 +3665,16 @@
             </div>
 
             <div class="social-links-web reveal">
-                <a href="https://github.com/MuhammadMohsin310" class="social-link-web" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/muhammad-mohsin-b89150248/" class="social-link-web" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://medium.com/@muhammad-mohsin" class="social-link-web" target="_blank"><i class="fab fa-medium"></i></a>
-                <a href="https://pub.dev/packages/flutter_speed_dial_navbar" class="social-link-web" target="_blank"><i class="fas fa-box-open"></i></a>
-                <a href="https://youtu.be/ysU2FcbTXn0" class="social-link-web" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/MuhammadMohsin310" class="social-link-web" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-mohsin-b89150248/" class="social-link-web"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@muhammad-mohsin" class="social-link-web" target="_blank"><i
+                        class="fab fa-medium"></i></a>
+                <a href="https://pub.dev/packages/flutter_speed_dial_navbar" class="social-link-web" target="_blank"><i
+                        class="fas fa-box-open"></i></a>
+                <a href="https://youtu.be/ysU2FcbTXn0" class="social-link-web" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
             </div>
         </div>
     </section>
@@ -3387,9 +3690,9 @@
 
         // Phone Emulator Attention Effects
         const phoneEmulator = document.getElementById('phoneEmulator');
-        
+
         // Remove attention on click
-        phoneEmulator.addEventListener('click', function() {
+        phoneEmulator.addEventListener('click', function () {
             this.classList.remove('attention');
             this.classList.add('interacted');
         });
@@ -3401,7 +3704,7 @@
         }, 10000);
 
         // Remove on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 300) {
                 phoneEmulator.classList.remove('attention');
                 phoneEmulator.classList.add('interacted');
@@ -3417,7 +3720,7 @@
 
             const currentEl = document.getElementById(`screen-${currentScreen}`);
             const targetEl = document.getElementById(`screen-${screenId}`);
-            
+
             if (!targetEl) return;
 
             showLoading();
@@ -3433,7 +3736,7 @@
 
                 previousScreen = currentScreen;
                 currentScreen = screenId;
-                
+
                 updateNavItems(screenId);
                 hideLoading();
             }, 200);
@@ -3442,7 +3745,7 @@
         function openProject(projectId) {
             const currentEl = document.getElementById(`screen-${currentScreen}`);
             const targetEl = document.getElementById(`screen-${projectId}`);
-            
+
             if (!targetEl) return;
 
             showLoading();
@@ -3516,7 +3819,7 @@
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -3529,4 +3832,5 @@
 
 
 </body>
+
 </html>
